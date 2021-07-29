@@ -1,0 +1,7 @@
+name: TowerWars
+version: 1.0
+author: Murphy
+main: de.towerwars.TowerWars
+commands:
+  test:
+  setup:
