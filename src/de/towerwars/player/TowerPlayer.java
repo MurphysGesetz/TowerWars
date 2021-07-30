@@ -123,36 +123,42 @@ public class TowerPlayer {
         if(entity.isDead()) return;
         final WorldServer s = ((CraftWorld) location.getWorld()).getHandle();
         final EntityArmorStand line = new EntityArmorStand(s, location.getX(), location.getY(), location.getZ());
+        if(entity.isDead()) return;
         switch (prefix) {
             case "aa":
-                if(entity.isDead()) return;
                 towerWarsTeam.addIncome(0);
                 towerWarsTeam.addCoins(1);
                 line.setCustomName("§6+1 Gold §7(§b+0 Lohn§7)");
                 break;
             case "ab":
-                if(entity.isDead()) return;
                 towerWarsTeam.addIncome(0);
                 towerWarsTeam.addCoins(2);
                 line.setCustomName("§6+2 Gold §7(§b+0 Lohn§7)");
                 break;
             case "ac":
-                if(entity.isDead()) return;
                 towerWarsTeam.addIncome(1);
                 towerWarsTeam.addCoins(4);
                 line.setCustomName("§6+4 Gold §7(§b+1 Lohn§7)");
                 break;
             case "ad":
-                if(entity.isDead()) return;
                 towerWarsTeam.addIncome(2);
                 towerWarsTeam.addCoins(10);
                 line.setCustomName("§6+10 Gold §7(§b+2 Lohn§7)");
                 break;
             case "ae":
-                if(entity.isDead()) return;
                 towerWarsTeam.addIncome(3);
                 towerWarsTeam.addCoins(15);
                 line.setCustomName("§6+15 Gold §7(§b+3 Lohn§7)");
+                break;
+            case "af":
+                towerWarsTeam.addIncome(4);
+                towerWarsTeam.addCoins(20);
+                line.setCustomName("§6+20 Gold §7(§b+4 Lohn§7)");
+                break;
+            case "ag":
+                towerWarsTeam.addIncome(5);
+                towerWarsTeam.addCoins(40);
+                line.setCustomName("§6+40 Gold §7(§b+5 Lohn§7)");
                 break;
         }
         line.setCustomNameVisible(true);

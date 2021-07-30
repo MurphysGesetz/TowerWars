@@ -36,6 +36,7 @@ public class TestCommand implements CommandExecutor {
                     } else if(args[0].equalsIgnoreCase("4")) {
                         moduleManager.getTowerWarsTeamHelper().getTowerWarsTeams()[0].summonMonster(moduleManager.getTowerWarsTeamHelper().getTowerWarsTeams()[0], "sheep");
                     } else if(args[0].equalsIgnoreCase("5")) {
+                        for(int i = 0; i < 5; i++)
                         moduleManager.getTowerWarsTeamHelper().getTowerWarsTeams()[0].summonMonster(moduleManager.getTowerWarsTeamHelper().getTowerWarsTeams()[0], "wolf");
                     } else if(args[0].equalsIgnoreCase("6")) {
                         moduleManager.getTowerWarsTeamHelper().getTowerWarsTeams()[0].summonMonster(moduleManager.getTowerWarsTeamHelper().getTowerWarsTeams()[0], "spider");
